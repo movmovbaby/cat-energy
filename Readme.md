@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Николай](https://up.htmlacademy.ru/adaptive/21/user/1578273).
-* Наставник: `Неизвестно`.
+- Студент: [Николай](https://up.htmlacademy.ru/adaptive/21/user/1578273).
+- Наставник: Павел Карачев.
 
 ---
 
