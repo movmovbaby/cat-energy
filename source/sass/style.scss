@@ -7,6 +7,9 @@
 // blocks
 @import "blocks/page/page.scss";
 @import "blocks/page-header/__wrapper/page-header__wraper.scss";
+@import "blocks/page-main/page-main__wrapper.scss";
+@import "blocks/page-main/page-main__title.scss";
+@import "blocks/page-main/page-main__text.scss";
 @import "blocks/button/button.scss";
 @import "blocks/promo/promo.scss";
 @import "blocks/promo/__wrapper/promo__wrapper.scss";
@@ -26,6 +29,13 @@
 @import "blocks/example/__title/example__title.scss";
 @import "blocks/example/__text/example__text.scss";
 @import "blocks/contacts/__wrapper/contacts__wrapper.scss";
+@import "blocks/contacts/__wrapper/contacts__wrapper--with-bcg.scss";
+@import "blocks/contacts/__img-container/contacts__img-container.scss";
 @import "blocks/contacts/__text/contacts__text.scss";
 @import "blocks/contacts/__address/contacts__address.scss";
 @import "blocks/page-footer/__wrapper/page-footer__wrapper.scss";
+@import "blocks/form/form.scss";
+@import "blocks/form/__fieldset/form__fieldset.scss";
+@import "blocks/form/__legend/form__legend.scss";
+@import "blocks/form/form-parameters__label/form-parameters__label.scss";
+@import "blocks/form/form-contacts__label/form-contacts__label.scss" ж;
