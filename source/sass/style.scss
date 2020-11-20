@@ -1,1 +1,31 @@
-// Начните писать стили здесь
+// globals
+
+@import "globals/variables.scss";
+@import "globals/global.scss";
+@import "globals/fonts.scss";
+
+// blocks
+@import "blocks/page/page.scss";
+@import "blocks/page-header/__wrapper/page-header__wraper.scss";
+@import "blocks/button/button.scss";
+@import "blocks/promo/promo.scss";
+@import "blocks/promo/__wrapper/promo__wrapper.scss";
+@import "blocks/promo/__slogan/promo__slogan.scss";
+@import "blocks/promo/__title/promo__title.scss";
+@import "blocks/promo/__button/promo__button.scss";
+@import "blocks/cat-programs/__wrapper/cat-programs__wrapper.scss";
+@import "blocks/cat-programs/__item/cat-programs__item.scss";
+@import "blocks/cat-programs/__title/cat-programs__title.scss";
+@import "blocks/cat-programs/__description/cat-programs__description.scss";
+@import "blocks/cat-programs/__link/cat-programs__link.scss";
+@import "blocks/explanation/__wrapper/explanation_wrapper.scss";
+@import "blocks/explanation/__title/explanation__title.scss";
+@import "blocks/explanation/__list/explanation__list.scss";
+@import "blocks/explanation/__item/explanation__item.scss";
+@import "blocks/example/__wrapper/example__wrapper.scss";
+@import "blocks/example/__title/example__title.scss";
+@import "blocks/example/__text/example__text.scss";
+@import "blocks/contacts/__wrapper/contacts__wrapper.scss";
+@import "blocks/contacts/__text/contacts__text.scss";
+@import "blocks/contacts/__address/contacts__address.scss";
+@import "blocks/page-footer/__wrapper/page-footer__wrapper.scss";
