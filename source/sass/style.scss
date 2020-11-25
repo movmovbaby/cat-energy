@@ -7,9 +7,8 @@
 // blocks
 @import "blocks/page/page.scss";
 @import "blocks/page-header/page-header.scss";
-@import "blocks/page-main/page-main__wrapper.scss";
-@import "blocks/page-main/page-main__title.scss";
-@import "blocks/page-main/page-main__text.scss";
+@import "blocks/page-main/page-main.scss";
+@import "blocks/main-nav/main-nav.scss";
 @import "blocks/button/button.scss";
 @import "blocks/promo/promo.scss";
 @import "blocks/cat-programs/cat-programs.scss";
@@ -18,10 +17,3 @@
 @import "blocks/contacts/contacts.scss";
 @import "blocks/page-footer/page-footer.scss";
 @import "blocks/form/form.scss";
-@import "blocks/form/__fieldset/form__fieldset.scss";
-@import "blocks/form/__legend/form__legend.scss";
-@import "blocks/form/form-parameters__label/form-parameters__label.scss";
-@import "blocks/form/form-contacts__label/form-contacts__label.scss";
-@import "blocks/form/form__textarea/form__textarea.scss";
-@import "blocks/form/__button/form__button.scss";
-@import "blocks/form/form-radio__label/form-radio__label.scss";
