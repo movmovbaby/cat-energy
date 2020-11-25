@@ -1,0 +1,11 @@
+.main-nav {
+  color: $black;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.main-nav__list {
+  font-family: inherit;
+  font-weight: bold;
+  list-style: none;
+  text-transform: uppercase;
+}
