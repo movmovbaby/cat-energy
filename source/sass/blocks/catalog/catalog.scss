@@ -1,0 +1,121 @@
+.catalog__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-grey;
+}
+
+.catalog-item__parameters {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-grey-darker;
+}
+
+.catalog__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-more__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $catalog-item-grey;
+}
+
+.item-more__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $special-grey-darker;
+}
+
+.catalog-button--to-all {
+  background-color: $basic-grey;
+  color: $special-grey-darker;
+}
+
+.catalog-additional__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.catalog-additional__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.additional-item__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.additional-item___parameters {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-grey-darker;
+}
+
+.gift {
+  background-color: $basic-green;
+}
+
+.gift__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+}
+
+/*
+
+
+.catalog-additional {}
+
+
+
+.catalog-additional__list {}
+
+.catalog-additional__item {}
+
+.gift {}
+ */
