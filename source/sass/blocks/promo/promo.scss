@@ -12,6 +12,7 @@
   text-align: center;
   background-color: $basic-green;
   opacity: 0.85;
+
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
@@ -56,6 +57,7 @@
 
 .promo__img {
   margin-bottom: 3px;
+
   @media (min-width: $tablet-width) {
     order: 4;
   }
