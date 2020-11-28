@@ -10,13 +10,15 @@
   padding-right: 20px;
   padding-top: 27px;
   text-align: center;
-  /* background-image: url("../../../../img/index-background-desktop-2.png"); */
   background-color: $basic-green;
   opacity: 0.85;
-}
-
-.promo__wrapper img {
-  margin-bottom: 3px;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .promo__title {
@@ -49,4 +51,28 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
+}
+
+.promo__img {
+  margin-bottom: 3px;
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .promo__img {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
 }

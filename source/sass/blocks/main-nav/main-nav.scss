@@ -9,3 +9,9 @@
   list-style: none;
   text-transform: uppercase;
 }
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
