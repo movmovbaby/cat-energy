@@ -15,10 +15,17 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    margin: 0 auto;
     padding: 0 30px;
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 
@@ -61,19 +68,8 @@
   @media (min-width: $tablet-width) {
     order: 4;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .promo__wrapper {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 110px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-
-  .promo__img {
+  @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/4;
   }

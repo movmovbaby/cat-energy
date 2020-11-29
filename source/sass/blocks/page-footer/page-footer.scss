@@ -10,7 +10,6 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    margin: 0 auto;
     padding: 0 30px;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +17,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 0 auto;
     padding: 0 110px;
   }
 }
