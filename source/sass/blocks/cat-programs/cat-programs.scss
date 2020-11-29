@@ -4,16 +4,39 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    flex-direction: row;
+  }
 }
 
 .cat-programs__item {
   margin: 0;
   padding: 0;
   background-color: $basic-grey;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .cat-programs__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
 }
 
 .cat-programs__title {
