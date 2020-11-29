@@ -4,12 +4,56 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    flex-direction: row;
+  }
 }
 
 .form__fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+.form-parameters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.form-parameters__radio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form-parameters__input-fields {
   border: none;
   padding: 0;
   margin: 0;
+  min-width: 281px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
 }
 
 .form__legend {
@@ -31,6 +75,22 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+}
+
+.form-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 1220px;
+  }
 }
 
 .form-contacts__label {
@@ -58,6 +118,50 @@
   border: 1px solid $special-grey-darker;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.form-additional__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+  }
+}
+
+.form__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 81px;
+  }
 }
 
 .form__button {
