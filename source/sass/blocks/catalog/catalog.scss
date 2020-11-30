@@ -4,12 +4,33 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .catalog__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .catalog-item__title {
@@ -33,6 +54,10 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: 244px;
+  }
 }
 
 .item-more__title {
@@ -66,12 +91,43 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.catalog-additional__title {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 5;
+  }
 }
 
 .catalog-additional__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 40px;
+}
+
+.additional-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .additional-item__title {
@@ -82,6 +138,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
 }
 
 .additional-item___parameters {
@@ -91,10 +151,18 @@
   font-size: 14px;
   line-height: 14px;
   color: $special-grey-darker;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
 }
 
 .gift {
   background-color: $basic-green;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
 }
 
 .gift__text {
