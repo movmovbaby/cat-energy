@@ -1,17 +1,101 @@
 .main-nav {
   color: $black;
   font-family: "Oswald", "Arial", sans-serif;
+  min-height: 66px;
+  position: relative;
+  width: auto;
 }
 
 .main-nav__list {
   font-family: inherit;
   font-weight: bold;
   list-style: none;
-  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
 
-.main-nav__toggle {
+.main-nav__item a {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  color: $black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: $special-grey;
+  }
+}
+
+.main-nav__item::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: -20px;
+  background-color: $list-bar;
+
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav__item--active {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: $basic-green;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    &::after {
+      background: $special-grey;
+    }
   }
 }
