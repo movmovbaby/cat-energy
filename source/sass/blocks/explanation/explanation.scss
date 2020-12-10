@@ -1,4 +1,6 @@
 .explanation {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     &::after {
       content: "";
@@ -7,6 +9,7 @@
       background-color: $list-bar;
       position: absolute;
       left: 0;
+      bottom: 0;
     }
   }
 

@@ -1,7 +1,7 @@
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 27px 20px 0 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 27px;
@@ -22,7 +22,26 @@
     background-color: $example-grey;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.example__title-wrapper {
+  width: 280px;
+  padding: 27px 20px 0 20px;
+  margin: 0 auto;
+  background-color: $example-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    margin-top: 43px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
   }
 }
 
@@ -31,8 +50,8 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -55,7 +74,6 @@
   min-width: 100%;
   padding: 0;
   margin: 0;
-  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -82,6 +100,7 @@
     justify-content: space-between;
     margin-top: 54px;
   }
+
   @media (min-width: $desktop-width) {
     min-width: 370px;
     margin-right: 204px;
@@ -100,12 +119,11 @@
 }
 
 .example__indicator {
-  padding: 0;
-  padding-top: 15px;
+  padding: 15px 0 0 0;
   margin: 0;
 
   border: 1px solid $special-grey;
-  text-align-last: center;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     &:not(:last-child) {

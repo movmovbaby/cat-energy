@@ -1,6 +1,5 @@
 .page-header {
   background-color: $white;
-  padding-top: 12px;
 }
 
 .page-header__wrapper {
@@ -56,7 +55,7 @@
 .page-header__nav-toggle {
   position: relative;
   top: 10px;
-  right: 20px;
+  right: 0;
   display: block;
   width: 24px;
   height: 24px;
@@ -69,7 +68,7 @@
   }
 }
 
-.page-header__nav-toggle::before {
+.page-header__nav--closed .page-header__nav-toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -77,12 +76,12 @@
   width: 24px;
   height: 2px;
   background-color: $black;
-  box-shadow: 0 8px 0 0$black, 0 16px 0 0 $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 }
 
 /* .main-nav--opened  */
-.page-header__nav-toggle--opened .page-header__nav-toggle {
-  top: 0;
+.page-header__nav--opened .page-header__nav-toggle {
+  top: 16px;
   right: 0;
 
   &::before,
@@ -91,13 +90,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 18px;
+    width: 25px;
     height: 2px;
     background-color: $black;
   }
+
   &::before {
     transform: rotate(45deg);
   }
+
   &::after {
     transform: rotate(-45deg);
   }
