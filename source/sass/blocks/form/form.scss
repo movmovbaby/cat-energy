@@ -2,23 +2,24 @@
   width: 280px;
   margin: 0 auto;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     width: 630px;
+    margin: 0;
+    padding-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 0 110px;
     flex-direction: row;
+    padding-left: 0;
   }
 }
 
 .form__fieldset {
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 .form-parameters {
@@ -26,26 +27,27 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    margin-bottom: 69px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
 
-.form-parameters__radio-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
 .form-parameters__input-fields {
   border: none;
-  padding: 0;
+  padding: 0 0 24px 0;
   margin: 0;
   min-width: 281px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 630px;
@@ -56,16 +58,50 @@
   }
 }
 
-.form__legend {
+.form__input {
+  flex-grow: 1;
+  border: 1px solid $input-border-grey;
+  height: 45px;
+  padding: 0 16px 0 16px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 26px;
-  margin: 0;
-  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-grey-darker;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 19px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 52px;
+  }
+}
+
+.form__label-name {
+  margin-right: 14px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-parameters__label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -73,8 +109,29 @@
   line-height: 18px;
   color: $special-grey-darker;
   text-transform: uppercase;
+  text-align: left;
   padding: 0;
   margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.form__legend {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 0 35px 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    width: 512px;
+    margin: 0 0 76px 0;
+  }
 }
 
 .form-contacts {
@@ -82,9 +139,11 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 630px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,6 +161,46 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 633px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 572px;
+  }
+}
+
+.form-parameters__radio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-top: 1px solid $form-bar;
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $input-border-grey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    align-self: flex-start;
+  }
 }
 
 .form-radio__label {
@@ -111,20 +210,59 @@
   line-height: 18px;
   color: $special-dark-grey;
   text-transform: uppercase;
+  margin-left: 46px;
+
+  &:not(:last-child) {
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &:not(:last-child) {
+      padding-bottom: 18px;
+    }
+  }
 }
 
 .form__textarea {
   width: 278px;
-  border: 1px solid $special-grey-darker;
-  padding: 0;
+  border: 1px solid $input-border-grey;
+  padding: 10px 15px 10px 15px;
   margin: 0;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-grey-darker;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
+    width: 590px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 19px;
+    padding-right: 19px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+  }
+}
+
+.form-additional {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -146,10 +284,28 @@
   }
 }
 
+.form-additional__label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .form__bottom {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -173,4 +329,26 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__footnote {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: left;
+  }
 }

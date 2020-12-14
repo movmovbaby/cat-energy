@@ -10,24 +10,24 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" width="150" height="150"
+    <div class="page-header__wrapper page-header__nav--closed">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-img" src="https://via.placeholder.com/191x38" width="191" height="38"
           alt="Кэт Энерджи" />
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <button class="page-header__nav-toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html"> Главная </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html"> Каталог продукции </a>
-          </li>
           <li class="main-nav__item main-nav__item--active">
-            <a> Подбор программы </a>
+            <a> Главная </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -39,100 +39,102 @@
       <p class="page-main__text">
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
-    </div>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
-      <fieldset class="form__fieldset form-parameters">
-        <legend class="visually-hidden">Параметры кота</legend>
-        <div class="form-parameters__input-fields">
-          <label class="form-parameters__label" for="cat-name">
-            Имя:<sup>*</sup>
-            <input class="form-parameters__input" name="cat-name" id="cat-name" type="text" value="Барсик" required />
+      <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
+        <fieldset class="form__fieldset form-parameters">
+          <legend class="visually-hidden">Параметры кота</legend>
+          <div class="form-parameters__input-fields">
+            <label class="form-parameters__label" for="cat-name">
+              <span class="form__label-name">Имя:<sup>*</sup></span>
+              <input class="form__input" name="cat-name" id="cat-name" type="text" value="Барсик" required />
+            </label>
+            <label class="form-parameters__label" for="cat-weight">
+              <span class="form__label-name">Вес (кг):<sup>*</sup></span>
+              <input class="form__input" name="cat-weight" id="cat-weight" type="number" min="0" value="7" required />
+            </label>
+            <label class="form-parameters__label" for="cat-age">
+              <span class="form__label-name">Возраст (лет):</span>
+              <input class="form__input" name="cat-age" id="cat-age" type="number" min="0" value="7" />
+            </label>
+          </div>
+          <div class="form-parameters__radio-buttons">
+            <label class="form-radio__label " for="program-slim">
+              <input class="form-parameters__radio visually-hidden" type="radio" id="program-slim" name="program"
+                value="Похудение" checked />Похудение
+            </label>
+            <label class="form-radio__label " for="program-gain">
+              <input class="form-parameters__radio visually-hidden" type="radio" id="program-gain" name="program"
+                value="Набор массы" />Набор массы
+            </label>
+            <label class="form-radio__label" for="program-advice">
+              <input class="form-parameters__radio visually-hidden" type="radio" id="program-advice" name="program"
+                value="Набор массы" />Не знаю (нужен ваш совет)
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form-contacts">
+          <legend class="form__legend">
+            Контактные данные (владельца кота)
+          </legend>
+          <label class="form-contacts__label" for="contacts-email">
+            <span class="form__label-name">e-mail:<sup>*</sup></span>
+            <input class="form__input" type="email" name="contacts-email" id="contacts-email"
+              placeholder="kukclachev@gmail.com" required />
           </label>
-          <label class="form-parameters__label" for="cat-weight">
-            Вес (кг):<sup>*</sup>
-            <input class="form-parameters__input" name="cat-weight" id="cat-weight" type="number" min="0" value="7"
-              required />
+          <label class="form-contacts__label" for="contacts-phone">
+            <span class="form__label-name">телефон:<sup>*</sup></span>
+            <input class="form__input" type="tel" name="contacts-phone" id="contacts-phone"
+              placeholder="8 (960) 900-60-90" required />
           </label>
-          <label class="form-parameters__label" for="cat-age">
-            Возраст (лет):
-            <input class="form-parameters__input" name="cat-age" id="cat-age" type="number" min="0" value="7" />
-          </label>
-        </div>
-        <div class="form-parameters__radio-buttons">
-          <label class="form-radio__label" for="program-slim">
-            <input class="form-parameters__radio" type="radio" id="program-slim" name="program" value="Похудение"
-              checked />Похудение
-          </label>
-          <label class="form-radio__label" for="program-gain">
-            <input class="form-parameters__radio" type="radio" id="program-gain" name="program"
-              value="Набор массы" />Набор массы
-          </label>
-          <label class="form-radio__label" for="program-advice">
-            <input class="form-parameters__radio" type="radio" id="program-advice" name="program"
-              value="Набор массы" />Набор массы
-          </label>
-        </div>
-      </fieldset>
-      <fieldset class="form__fieldset form-contacts">
-        <legend class="form__legend">
-          Контактные данные (владельца кота)
-        </legend>
-        <label class="form-contacts__label" for="contacts-email">
-          e-mail:<sup>*</sup>
-          <input class="form-contacts__input" type="email" name="contacts-email" id="contacts-email"
-            placeholder="kukclachev@gmail.com" required />
-        </label>
-        <label class="form-contacts__label" for="contacts-phone">
-          телефон:<sup>*</sup>
-          <input class="form-contacts__input" type="tel" name="contacts-phone" id="contacts-phone"
-            placeholder="8 (960) 900-60-90" required />
-        </label>
-      </fieldset>
-      <fieldset class="form__fieldset form-comment">
-        <legend class="form__legend">Комментарий</legend>
-        <textarea class="form__textarea" name="comment-text" id="comment-text" cols="30" rows="10">
+        </fieldset>
+        <fieldset class="form__fieldset form-comment">
+          <legend class="form__legend">Комментарий</legend>
+          <textarea class="form__textarea" name="comment-text" id="comment-text" cols="30" rows="10">
 Расскажите обо всех повадках кота</textarea>
-      </fieldset>
-      <fieldset class="form__fieldset form-additional">
-        <legend class="form__legend">Дополнительно</legend>
-        <div class="form-additional__wrapper">
-          <label class="form-additional__label" for="additional-sweetener">
-            <input class="form-additional__checkbox" type="checkbox" name="additional-sweetener"
-              id="additional-sweetener" checked />Сахарозаменитель
-          </label>
-          <label class="form-additional__label" for="additional-water">
-            <input class="form-additional__checkbox" type="checkbox" name="additional-water"
-              id="additional-water" />Питьевая вода
-          </label>
-          <label class="form-additional__label" for="additional-milk">
-            <input class="form-additional__checkbox" type="checkbox" name="additional-milk"
-              id="additional-milk" />Молоко
-          </label>
-          <label class="form-additional__label" for="additional-vitamins">
-            <input class="form-additional__checkbox" type="checkbox" name="additional-milk"
-              id="additional-vitamins" />Витамины
-          </label>
+        </fieldset>
+        <fieldset class="form__fieldset form-additional">
+          <legend class="form__legend">Дополнительно</legend>
+          <div class="form-additional__wrapper">
+            <label class="form-additional__label" for="additional-sweetener">
+              <input class="form-additional__checkbox" type="checkbox" name="additional-sweetener"
+                id="additional-sweetener" checked />Сахарозаменитель
+            </label>
+            <label class="form-additional__label" for="additional-water">
+              <input class="form-additional__checkbox" type="checkbox" name="additional-water"
+                id="additional-water" />Питьевая вода
+            </label>
+            <label class="form-additional__label" for="additional-milk">
+              <input class="form-additional__checkbox" type="checkbox" name="additional-milk"
+                id="additional-milk" />Молоко
+            </label>
+            <label class="form-additional__label" for="additional-vitamins">
+              <input class="form-additional__checkbox" type="checkbox" name="additional-milk"
+                id="additional-vitamins" />Витамины
+            </label>
+          </div>
+        </fieldset>
+        <div class="form__bottom">
+          <button class="button form__button" type="submit">
+            Отправить заявку
+          </button>
+          <p class="form__footnote"><sup>*</sup> - Обязательные поля</p>
         </div>
-      </fieldset>
-      <div class="form__bottom">
-        <button class="button form__button" type="submit">
-          Отправить заявку
-        </button>
-        <p class="form__footnote"><sup>*</sup> - Обязательные поля</p>
-      </div>
-    </form>
+      </form>
+    </div>
     <section class="contacts">
       <div class="contacts__wrapper contacts__wrapper--with-bcg">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+        <div class="contacts__address-container">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
       </div>
       <div class="contacts__img-container">
         <img src="https://via.placeholder.com/320x362" width="320" height="362" alt="Карта" />
       </div>
     </section>
+
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -158,6 +160,27 @@
       </div>
     </div>
   </footer>
+  <script>
+    const pageHeaderWrapper = document.querySelector(".page-header__wrapper");
+    const navToggle = pageHeaderWrapper.querySelector(".page-header__nav-toggle");
+    const mainNav = pageHeaderWrapper.querySelector(".main-nav ");
+
+    navToggle.addEventListener("click", function () {
+      if (pageHeaderWrapper.classList.contains("page-header__nav--closed")) {
+        pageHeaderWrapper.classList.remove("page-header__nav--closed");
+        pageHeaderWrapper.classList.add("page-header__nav--opened");
+        mainNav.classList.remove("main-nav--closed");
+        mainNav.classList.add("main-nav--opened");
+      }
+      else if (pageHeaderWrapper.classList.contains("page-header__nav--opened")) {
+        pageHeaderWrapper.classList.remove("page-header__nav--opened");
+        pageHeaderWrapper.classList.add("page-header__nav--closed");
+        mainNav.classList.remove("main-nav--opened");
+        mainNav.classList.add("main-nav--closed");
+      }
+
+    })
+  </script>
 </body>
 
 </html>
