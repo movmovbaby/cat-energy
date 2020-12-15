@@ -20,14 +20,14 @@
       </button>
       <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item">
             <a> Главная </a>
           </li>
           <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a>Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -56,23 +56,27 @@
               <input class="form__input" name="cat-age" id="cat-age" type="number" min="0" value="7" />
             </label>
           </div>
+
           <div class="form-parameters__radio-buttons">
-            <label class="form-radio__label " for="program-slim">
-              <input class="form-parameters__radio visually-hidden" type="radio" id="program-slim" name="program"
-                value="Похудение" checked />Похудение
+
+            <input class="form-parameters__radio visually-hidden" type="radio" id="program-slim" name="program"
+              value="Похудение" checked />
+            <label class="form-parameters__radio-label" for="program-slim">Похудение
             </label>
-            <label class="form-radio__label " for="program-gain">
-              <input class="form-parameters__radio visually-hidden" type="radio" id="program-gain" name="program"
-                value="Набор массы" />Набор массы
+
+            <input class="form-parameters__radio visually-hidden" type="radio" id="program-gain" name="program"
+              value="Набор массы" />
+            <label class="form-parameters__radio-label" for="program-gain">Набор массы
             </label>
-            <label class="form-radio__label" for="program-advice">
-              <input class="form-parameters__radio visually-hidden" type="radio" id="program-advice" name="program"
-                value="Набор массы" />Не знаю (нужен ваш совет)
+
+            <input class="form-parameters__radio visually-hidden" type="radio" id="program-advice" name="program"
+              value="Набор массы" />
+            <label class="form-parameters__radio-label" for="program-advice">Не знаю (нужен ваш совет)
             </label>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form-contacts">
-          <legend class="form__legend">
+          <legend class="form__legend form__legend--contacts">
             Контактные данные (владельца кота)
           </legend>
           <label class="form-contacts__label" for="contacts-email">
@@ -87,29 +91,36 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset form-comment">
-          <legend class="form__legend">Комментарий</legend>
+          <legend class="form__legend form__legend--comment">Комментарий</legend>
           <textarea class="form__textarea" name="comment-text" id="comment-text" cols="30" rows="10">
 Расскажите обо всех повадках кота</textarea>
         </fieldset>
         <fieldset class="form__fieldset form-additional">
-          <legend class="form__legend">Дополнительно</legend>
+          <legend class="form__legend form__legend--additional">Дополнительно</legend>
           <div class="form-additional__wrapper">
-            <label class="form-additional__label" for="additional-sweetener">
-              <input class="form-additional__checkbox" type="checkbox" name="additional-sweetener"
-                id="additional-sweetener" checked />Сахарозаменитель
+
+            <input class="form-additional__checkbox visually-hidden" type="checkbox" name="additional-sweetener"
+              id="additional-sweetener" checked />
+            <label class="form-additional__label" for="additional-sweetener">Сахарозаменитель
             </label>
-            <label class="form-additional__label" for="additional-water">
-              <input class="form-additional__checkbox" type="checkbox" name="additional-water"
-                id="additional-water" />Питьевая вода
+
+            <input class="form-additional__checkbox visually-hidden" type="checkbox" name="additional-water"
+              id="additional-water" />
+            <label class="form-additional__label" for="additional-water">Питьевая вода
             </label>
-            <label class="form-additional__label" for="additional-milk">
-              <input class="form-additional__checkbox" type="checkbox" name="additional-milk"
-                id="additional-milk" />Молоко
+
+
+            <input class="form-additional__checkbox visually-hidden" type="checkbox" name="additional-milk"
+              id="additional-milk" />
+            <label class="form-additional__label" for="additional-milk">Молоко
             </label>
-            <label class="form-additional__label" for="additional-vitamins">
-              <input class="form-additional__checkbox" type="checkbox" name="additional-milk"
-                id="additional-vitamins" />Витамины
+
+
+            <input class="form-additional__checkbox visually-hidden" type="checkbox" name="additional-milk"
+              id="additional-vitamins" />
+            <label class="form-additional__label" for="additional-vitamins">Витамины
             </label>
+
           </div>
         </fieldset>
         <div class="form__bottom">
@@ -160,27 +171,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    const pageHeaderWrapper = document.querySelector(".page-header__wrapper");
-    const navToggle = pageHeaderWrapper.querySelector(".page-header__nav-toggle");
-    const mainNav = pageHeaderWrapper.querySelector(".main-nav ");
-
-    navToggle.addEventListener("click", function () {
-      if (pageHeaderWrapper.classList.contains("page-header__nav--closed")) {
-        pageHeaderWrapper.classList.remove("page-header__nav--closed");
-        pageHeaderWrapper.classList.add("page-header__nav--opened");
-        mainNav.classList.remove("main-nav--closed");
-        mainNav.classList.add("main-nav--opened");
-      }
-      else if (pageHeaderWrapper.classList.contains("page-header__nav--opened")) {
-        pageHeaderWrapper.classList.remove("page-header__nav--opened");
-        pageHeaderWrapper.classList.add("page-header__nav--closed");
-        mainNav.classList.remove("main-nav--opened");
-        mainNav.classList.add("main-nav--closed");
-      }
-
-    })
-  </script>
+  <script src="../source/js/app.js"></script>
 </body>
 
 </html>
