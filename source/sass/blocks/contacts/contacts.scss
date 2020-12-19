@@ -2,7 +2,6 @@
   width: 280px;
   margin: 0 auto;
   position: relative;
-
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 28px;
@@ -21,8 +20,12 @@
   }
 }
 
-.contacts__wrapper--with-bcg {
+.contacts__wrapper--with-background {
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
 }
 
 .contacts__address-container {
@@ -33,6 +36,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 42px;
     padding-right: 42px;
+    background-color: $basic-grey;
   }
 
   @media (min-width: $desktop-width) {

@@ -137,8 +137,8 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
-      <div class="contacts__wrapper">
+    <section class="contacts ">
+      <div class="contacts__wrapper contacts__wrapper--with-background ">
         <div class="contacts__address-container">
           <h2 class="visually-hidden">Наши контакты</h2>
           <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
@@ -176,27 +176,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    const pageHeaderWrapper = document.querySelector(".page-header__wrapper");
-    const navToggle = pageHeaderWrapper.querySelector(".page-header__nav-toggle");
-    const mainNav = pageHeaderWrapper.querySelector(".main-nav ");
-
-    navToggle.addEventListener("click", function () {
-      if (pageHeaderWrapper.classList.contains("page-header__nav--closed")) {
-        pageHeaderWrapper.classList.remove("page-header__nav--closed");
-        pageHeaderWrapper.classList.add("page-header__nav--opened");
-        mainNav.classList.remove("main-nav--closed");
-        mainNav.classList.add("main-nav--opened");
-      }
-      else if (pageHeaderWrapper.classList.contains("page-header__nav--opened")) {
-        pageHeaderWrapper.classList.remove("page-header__nav--opened");
-        pageHeaderWrapper.classList.add("page-header__nav--closed");
-        mainNav.classList.remove("main-nav--opened");
-        mainNav.classList.add("main-nav--closed");
-      }
-
-    })
-  </script>
+  <script src="/source/js/app.js"></script>
 </body>
 
 </html>
