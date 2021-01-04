@@ -1,5 +1,14 @@
 .page-header {
   background-color: $white;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .page-header__wrapper {
@@ -16,6 +25,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-top: 50px;
   }
 }
 

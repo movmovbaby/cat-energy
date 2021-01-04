@@ -47,6 +47,12 @@
   font-size: 36px;
   line-height: 40px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .explanation__list {
@@ -75,20 +81,150 @@
 .explanation__item {
   padding: 0;
   margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+  }
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 230px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+  }
+}
+
+.explanation__item--useful-nutrients {
+  &::before {
+    background-image: url("../../../img/icon_leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+
+    &::after {
+      content: "1";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+    }
+  }
+}
+
+.explanation__item--powder {
+  &::before {
+    background-image: url("../../../img/icon_tub.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 246px;
+
+    &::after {
+      content: "2";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+    }
+  }
+}
+
+.explanation__item--functional-food {
+  &::before {
+    background-image: url("../../../img/icon_eat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 247px;
+
+    &::after {
+      content: "3";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+    }
+  }
+}
+
+.explanation__item--difference {
+  &::before {
+    background-image: url("../../../img/icon_alarm.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+
+    &::after {
+      content: "4";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+    }
   }
 }
 
 .explanation__description {
   margin: 0;
   padding: 0;
-  margin-left: 100px;
+  margin-left: 80px;
   text-align: left;
+  color: $special-grey-darker;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
     min-height: 75px;
+    margin-top: 151px;
+    margin-bottom: 57px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
