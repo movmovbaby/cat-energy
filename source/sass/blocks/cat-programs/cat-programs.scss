@@ -224,6 +224,7 @@
   &:active,
   &:focus {
     opacity: 0.3;
+
     &::after {
       background-image: url("../img/icon-arrow-grey.svg");
     }
