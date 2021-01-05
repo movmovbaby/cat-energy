@@ -33,6 +33,15 @@
   text-align: left;
   width: 195px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     width: 178px;
     height: 53px;

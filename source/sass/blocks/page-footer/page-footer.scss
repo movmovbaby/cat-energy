@@ -29,7 +29,6 @@
   align-items: center;
   padding-top: 39px;
   padding-bottom: 32px;
-
   position: relative;
 
   &::after {
@@ -40,6 +39,15 @@
     width: 100%;
     height: 1px;
     background-color: $footer-bar-grey;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {
@@ -80,6 +88,10 @@
   min-width: 130px;
   padding: 0;
 }
+
+/* .social__link:hover svg {
+  fill: $basic-green;
+} */
 
 .page-footer__copyright {
   display: flex;

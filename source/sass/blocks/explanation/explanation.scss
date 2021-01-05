@@ -93,6 +93,19 @@
     background-color: $basic-green;
   }
 
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-grey;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -110,7 +123,7 @@
 
 .explanation__item--useful-nutrients {
   &::before {
-    background-image: url("../../../img/icon_leaf.svg");
+    background-image: url("../../../img/icon-leaf.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -120,23 +133,13 @@
 
     &::after {
       content: "1";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 280px;
-      line-height: 280px;
-      color: $basic-grey;
     }
   }
 }
 
 .explanation__item--powder {
   &::before {
-    background-image: url("../../../img/icon_tub.svg");
+    background-image: url("../../../img/icon-tub.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -146,23 +149,13 @@
 
     &::after {
       content: "2";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 280px;
-      line-height: 280px;
-      color: $basic-grey;
     }
   }
 }
 
 .explanation__item--functional-food {
   &::before {
-    background-image: url("../../../img/icon_eat.svg");
+    background-image: url("../../../img/icon-eat.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -172,23 +165,13 @@
 
     &::after {
       content: "3";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 280px;
-      line-height: 280px;
-      color: $basic-grey;
     }
   }
 }
 
 .explanation__item--difference {
   &::before {
-    background-image: url("../../../img/icon_alarm.svg");
+    background-image: url("../../../img/icon-alarm.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -198,16 +181,6 @@
 
     &::after {
       content: "4";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 280px;
-      line-height: 280px;
-      color: $basic-grey;
     }
   }
 }
