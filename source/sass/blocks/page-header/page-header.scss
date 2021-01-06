@@ -1,5 +1,14 @@
 .page-header {
   background-color: $white;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .page-header__wrapper {
@@ -16,12 +25,22 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-top: 50px;
   }
 }
 
 .page-header__logo {
   text-align: left;
   width: 195px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     width: 178px;

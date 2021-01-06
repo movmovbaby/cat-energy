@@ -10,23 +10,34 @@
   padding-right: 20px;
   padding-top: 27px;
   text-align: center;
-  background-color: $basic-green;
-  opacity: 0.85;
+  background-image: url("../img/promo-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 320px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
     display: flex;
     flex-direction: column;
-    background-color: $white;
+    justify-content: flex-start;
+    background-image: none;
+    padding-bottom: 0;
+    opacity: 1;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 110px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr;
+    padding-top: 52px;
+    background: transparent;
+    background-image: url("../img/promo-cat-desktop.jpg");
+    background-origin: border-box;
+    background-size: contain;
+    background-position: top 0 left 720px;
+    background-repeat: no-repeat;
+    margin-top: -116px;
+    z-index: -1;
   }
 }
 
@@ -54,6 +65,7 @@
   @media (min-width: $desktop-width) {
     margin-left: 80px;
     margin-bottom: 0;
+    margin-top: 125px;
   }
 }
 
@@ -68,19 +80,18 @@
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 20px;
     color: $black;
     width: 285px;
     margin-top: 40px;
     margin-left: 87px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
-    margin-bottom: 0;
+    margin-bottom: 52px;
     margin-top: 42px;
   }
 }
@@ -95,40 +106,58 @@
   justify-content: center;
   align-items: center;
 
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
   @media (min-width: $tablet-width) {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
     max-width: 244px;
-    margin-top: 49px;
+    margin-top: 0;
     margin-left: 87px;
+    z-index: 3;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
     align-self: flex-start;
     margin-top: 0;
+    padding: 15px 0;
+  }
+}
+
+.promo__button-text {
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.promo__img-container {
+  @media (min-width: $tablet-width) {
+    order: 10;
   }
 }
 
 .promo__img {
+  margin-top: 0;
+  z-index: 3;
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    order: 4;
+    order: 3;
     width: 709px;
     height: 609px;
-    margin-top: -75px;
-    z-index: -1;
+    margin-top: -71px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-    grid-row: 1/4;
     width: 552px;
     height: 499px;
-    z-index: 0;
-    margin-left: -46px;
-    margin-top: 0;
+    margin-left: 276px;
+    margin-top: -350px;
   }
 }
