@@ -59,7 +59,9 @@
 }
 
 .form__input {
-  flex-grow: 1;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
   border: 1px solid $input-border-grey;
   height: 45px;
   padding: 0 16px 0 16px;
@@ -70,17 +72,56 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-grey-darker;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    border: 1px solid $special-grey-darker;
+  }
+
+  &:invalid {
+    border: 1px solid $status_error;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-left: 19px;
-    height: 45px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 52px;
+    height: 50px;
   }
+}
+
+.form__input[type="email"] {
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: center right 15px;
+
+  &:disabled {
+    background-image: url("../img/icon-email-green.svg");
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    border: 2px solid $special-grey-darker;
+  }
+
+  &:invalid {
+    background-image: url("../img/icon-email-red.svg");
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    border: 2px solid $status_error;
+  }
+}
+
+.form__input[type="tel"] {
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center right 15px;
 }
 
 .form__label-name {
@@ -227,6 +268,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 14px;
@@ -243,6 +286,9 @@
 
   @media (min-width: $desktop-width) {
     width: 572px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -411,7 +457,7 @@
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
+  top: 0;
   width: 30px;
   height: 30px;
   border: 1px solid $special-grey;
@@ -419,15 +465,13 @@
 
 .form-additional__checkbox:checked + .form-additional__label::after {
   content: "";
+  display: block;
   position: absolute;
-  top: 6px;
-  left: 8px;
-  width: 18px;
-  height: 14px;
-  background-color: $basic-green;
-  /*  background-image: url("../../../img/checked.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0; */
+  width: 20px;
+  height: 20px;
+  background-color: red;
+
+  /* background-image: url("../img/icon-checked.svg"); */
 }
 
 .form__bottom {

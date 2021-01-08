@@ -36,7 +36,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 42px;
     padding-right: 42px;
-    background-color: $basic-grey;
+    background-color: inherit;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,6 +79,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     max-width: 160px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
