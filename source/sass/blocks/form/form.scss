@@ -286,6 +286,7 @@
 
   @media (min-width: $desktop-width) {
     width: 572px;
+
     &:not(:last-child) {
       margin-bottom: 0;
     }
