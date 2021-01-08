@@ -389,7 +389,7 @@
   color: $special-grey-darker;
 
   @media (min-width: $tablet-width) {
-    width: 590px;
+    width: 630px;
     font-size: 20px;
     line-height: 30px;
     padding-left: 19px;
@@ -467,11 +467,13 @@
   content: "";
   display: block;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-
-  /* background-image: url("../img/icon-checked.svg"); */
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon-checked.svg");
+  background-repeat: no-repeat;
+  top: 10px;
+  left: 7px;
+  background-position: center;
 }
 
 .form__bottom {
