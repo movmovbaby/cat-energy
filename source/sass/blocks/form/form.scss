@@ -123,6 +123,13 @@
   background-repeat: no-repeat;
   background-position: center right 15px;
 
+  &:disabled {
+    background-image: url("../img/icon-phone-green.svg");
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    border: 2px solid $special-grey-darker;
+  }
+
   &:focus:invalid {
     background-image: url("../img/icon-phone-red.svg");
     background-repeat: no-repeat;
@@ -371,6 +378,20 @@
   border-radius: 50%;
 }
 
+.form-parameters__radio:hover + .form-parameters__radio-label::before {
+  border-color: $input-grey;
+}
+
+.form-parameters__radio:disabled + .form-parameters__radio-label {
+  border-color: $input-grey;
+  opacity: 0.3;
+}
+
+.form-parameters__radio:disabled {
+  color: $special-dark-grey;
+  opacity: 0.3;
+}
+
 .form-parameters__radio:checked + .form-parameters__radio-label::after {
   content: "";
   position: absolute;
@@ -470,6 +491,20 @@
   height: 30px;
   border: 1px solid $special-grey;
 }
+
+.form-additional__checkbox:hover + .form-additional__label::before {
+  border-color: $input-grey;
+}
+
+.form-additional__checkbox:disabled + .form-additional__label::before {
+  border-color: $input-grey;
+  opacity: 0.3;
+}
+
+.form-additional__checkbox:disabled + .form-additional__label {
+  opacity: 0.3;
+}
+
 
 .form-additional__checkbox:checked + .form-additional__label::after {
   content: "";
