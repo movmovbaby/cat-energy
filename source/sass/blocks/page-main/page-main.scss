@@ -42,6 +42,12 @@
   }
 }
 
+.page-main__wrapper--without-bottom-bar {
+  &::after {
+    display: none;
+  }
+}
+
 .page-main__title {
   font-style: normal;
   font-weight: normal;
@@ -50,14 +56,14 @@
   margin: 0;
   text-align: left;
   box-sizing: border-box;
-  padding-bottom: 41px;
+  padding-bottom: 37px;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 83px;
-    padding-top: 64px;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,7 +79,7 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
-  padding: 37px 0 39px 0;
+  padding: 0 0 39px 0;
   text-align: left;
   width: 230px;
 
