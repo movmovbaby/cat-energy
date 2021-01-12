@@ -107,33 +107,10 @@
   }
 }
 
-.catalog-item__img--chicken-500 {
-  @media (min-width: $tablet-width) {
-    width: 161px;
-    height: 172px;
-  }
-}
+.catalog-item__img {
+  width: 140px;
+  height: 112px;
 
-.catalog-item__img--chicken-1000 {
-  @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 206px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 172px;
-    height: 201px;
-  }
-}
-
-.catalog-item__img--fish-500 {
-  @media (min-width: $tablet-width) {
-    width: 163px;
-    height: 174px;
-  }
-}
-
-.catalog-item__img--fish-1000 {
   @media (min-width: $tablet-width) {
     width: 168px;
     height: 200px;
@@ -142,27 +119,6 @@
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 196px;
-  }
-}
-
-.catalog-item__img--buckwheat-500 {
-  @media (min-width: $tablet-width) {
-    width: 161px;
-    height: 171px;
-  }
-}
-
-.catalog-item__img--buckwheat-1000 {
-  @media (min-width: $tablet-width) {
-    width: 161px;
-    height: 171px;
-  }
-}
-
-.catalog-item__img--rice-500 {
-  @media (min-width: $tablet-width) {
-    width: 163px;
-    height: 174px;
   }
 }
 
