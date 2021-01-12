@@ -79,14 +79,19 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     max-width: 160px;
-    text-align: end;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 1em;
   }
 
   @media (min-width: $desktop-width) {
     text-align: start;
+  }
+}
+
+.contacts__street {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 1rem;
   }
 }
 
