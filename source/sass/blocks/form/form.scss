@@ -417,6 +417,15 @@
   text-transform: uppercase;
   color: $special-grey-darker;
 
+  &:hover {
+    border-color: $input-grey;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $special-grey-darker;
+  }
+
   @media (min-width: $tablet-width) {
     width: 630px;
     font-size: 20px;
@@ -505,7 +514,6 @@
   opacity: 0.3;
 }
 
-
 .form-additional__checkbox:checked + .form-additional__label::after {
   content: "";
   display: block;
@@ -549,11 +557,20 @@
   align-items: center;
   margin-bottom: 21px;
 
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 0;
   }
+}
+
+.form__button:active .form__button-text,
+.form__button:focus .form__button-text {
+  opacity: 0.3;
 }
 
 .form__footnote {

@@ -1,6 +1,26 @@
 .promo {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
+    background-image: url("../img/promo-cat-desktop.jpg");
+    background-origin: border-box;
+    background-position: top right;
+    background-repeat: no-repeat;
+    margin-top: -116px;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-cat-desktop@2x.jpg");
+      background-origin: border-box;
+      background-position: top right;
+      background-size: 720px 694px;
+      background-repeat: no-repeat;
+      margin-top: -116px;
+      z-index: -1;
+    }
+  }
 }
 
 .promo__wrapper {
@@ -14,6 +34,10 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-cat@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -30,14 +54,6 @@
     width: 1220px;
     padding: 0 110px;
     padding-top: 52px;
-    background: transparent;
-    background-image: url("../img/promo-cat-desktop.jpg");
-    background-origin: border-box;
-    background-size: contain;
-    background-position: top 0 left 720px;
-    background-repeat: no-repeat;
-    margin-top: -116px;
-    z-index: -1;
   }
 }
 

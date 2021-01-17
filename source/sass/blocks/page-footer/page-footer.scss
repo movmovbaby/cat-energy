@@ -92,6 +92,7 @@
 
 .social__link:hover svg {
   stroke: $basic-green;
+  stroke-linecap: round;
 }
 
 .social__link:active svg,

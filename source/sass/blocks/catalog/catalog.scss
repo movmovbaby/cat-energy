@@ -54,12 +54,10 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    /* border: 2px solid $basic-grey */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    /* background-color: $basic-grey; */
     padding-bottom: 40px;
     margin-top: 0;
     margin-bottom: 63px;
@@ -122,17 +120,19 @@
   }
 }
 
+.catalog-item__title-link {
+  text-decoration: none;
+}
+
 .catalog-item__title {
   grid-column: 2 /3;
   grid-row: 1 / 2;
   width: 76px;
   margin-top: 0;
-  /* margin-bottom: 18px; */
   margin-block-end: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  /* line-height: 20px; */
   color: $special-dark-grey;
   text-transform: uppercase;
 
@@ -195,7 +195,8 @@
   }
 }
 
-.catalog__button:active .catalog__button-text {
+.catalog__button:active .catalog__button-text,
+.catalog__button:focus .catalog__button-text {
   opacity: 0.3;
 }
 
@@ -206,6 +207,10 @@
   padding-bottom: 10px;
   padding-top: 10px;
 
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
@@ -213,6 +218,11 @@
   @media (min-width: $desktop-width) {
     width: 245px;
   }
+}
+
+.catalog-additional__button:active .catalog-additional__button-text,
+.catalog-additional__button:focus .catalog-additional__button-text {
+  opacity: 0.3;
 }
 
 .parameters-list__row {
@@ -530,16 +540,11 @@
   background-repeat: no-repeat;
   position: relative;
 
-  /*  &::before {
-    content: "";
-    position: absolute;
-    width: 78px;
-    height: 80px;
-    top: 58px;
-    left: auto;
-    background-image: url("../img/icon-gift.svg");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
   }
- */
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -548,6 +553,11 @@
     padding-right: 124px;
     margin-bottom: 76px;
     background-image: url("../img/gift-photo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-table@2x.jpg");
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -557,6 +567,10 @@
     margin-bottom: 86px;
     background-image: url("../img/gift-photo-desktop.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 
