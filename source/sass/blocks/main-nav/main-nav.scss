@@ -4,6 +4,7 @@
   min-height: 66px;
   position: relative;
   width: auto;
+  margin-top: 6px;
 }
 
 .main-nav__list {
@@ -18,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 440px;
+    width: 444px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +99,7 @@
   }
 }
 
-.main-nav__item--green-background a {
+.main-nav--green-background a {
   @media (min-width: $desktop-width) {
     color: $white;
   }
@@ -111,10 +112,10 @@
     &::after {
       content: "";
       position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      bottom: 2px;
+      left: 5px;
       height: 2px;
+      width: 63px;
       background: $basic-green;
     }
   }

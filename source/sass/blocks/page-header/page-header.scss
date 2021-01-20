@@ -32,7 +32,7 @@
 
 .page-header__logo {
   text-align: left;
-  width: 195px;
+  width: 178px;
 
   &:hover {
     opacity: 0.8;
@@ -85,7 +85,7 @@
   }
 }
 
-.page-header__nav--closed .page-header__nav-toggle::before {
+.page-header__wrapper--nav-closed .page-header__nav-toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -97,7 +97,7 @@
 }
 
 /* .main-nav--opened  */
-.page-header__nav--opened .page-header__nav-toggle {
+.page-header__wrapper--nav-opened .page-header__nav-toggle {
   top: 16px;
   right: 0;
 

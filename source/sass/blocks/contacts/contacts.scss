@@ -61,7 +61,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
   }
 }
 
@@ -79,7 +79,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     max-width: 160px;
-    text-align: left;
+    text-align: right;
     display: flex;
     flex-direction: column;
   }
@@ -91,7 +91,7 @@
 
 .contacts__street {
   @media (min-width: $tablet-width) {
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
   }
 }
 
@@ -122,6 +122,14 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     margin: 0 auto;
+  }
+}
+
+.contacts__map {
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400;
   }
 }
 
