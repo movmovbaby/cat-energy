@@ -119,6 +119,13 @@
       background: $basic-green;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background: $white;
+      width: 68px;
+    }
+  }
 }
 
 .main-nav__item--green-background .main-nav__item--active {
