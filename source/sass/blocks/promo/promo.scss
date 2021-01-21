@@ -1,25 +1,43 @@
 .promo {
   margin: 0;
   padding: 0;
-  margin-bottom: -5px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -5px;
+  }
 
   @media (min-width: $desktop-width) {
     background: transparent;
-    background-image: url("../img/promo-cat-desktop.jpg");
-    background-origin: border-box;
+
+    /* background-origin: border-box;
     background-position: top right;
-    background-repeat: no-repeat;
-    margin-top: -116px;
+    background-repeat: no-repeat; */
+    /* margin-top: -136px; */
     z-index: -1;
+    margin-bottom: 131px;
+    position: relative;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-cat-desktop@2x.jpg");
+      /* background-image: url("../img/promo-cat-desktop@2x.jpg");
       background-origin: border-box;
       background-position: top right;
       background-size: 720px 694px;
-      background-repeat: no-repeat;
-      margin-top: -116px;
+      background-repeat: no-repeat; */
+      margin-top: -136px;
       z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-image: url("../img/promo-cat-desktop.jpg");
+      background-size: cover;
+      background-position: top;
     }
   }
 }
@@ -82,7 +100,7 @@
   @media (min-width: $desktop-width) {
     margin-left: 80px;
     margin-bottom: 0;
-    margin-top: 125px;
+    margin-top: 173px;
   }
 }
 
@@ -109,7 +127,7 @@
   @media (min-width: $desktop-width) {
     margin-left: 80px;
     margin-bottom: 52px;
-    margin-top: 42px;
+    margin-top: 38px;
   }
 }
 
@@ -142,8 +160,8 @@
   @media (min-width: $desktop-width) {
     margin-left: 80px;
     align-self: flex-start;
-    margin-top: 0;
-    padding: 15px 0;
+    margin-top: 1px;
+    padding: 16px 0;
   }
 }
 
@@ -176,7 +194,7 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    margin-left: 276px;
-    margin-top: -350px;
+    margin-left: 226px;
+    margin-top: -355px;
   }
 }

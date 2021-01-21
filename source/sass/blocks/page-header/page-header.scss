@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+    background-color: transparent;
   }
 }
 
@@ -26,13 +27,13 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin-top: 50px;
+    margin-top: 53px;
   }
 }
 
 .page-header__logo {
   text-align: left;
-  width: 178px;
+  width: 191px;
 
   &:hover {
     opacity: 0.8;

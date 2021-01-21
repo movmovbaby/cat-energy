@@ -28,6 +28,7 @@
   flex-wrap: wrap;
   align-items: center;
   position: relative;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding-left: 52px;
@@ -44,7 +45,11 @@
 }
 
 .cat-programs__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
@@ -107,7 +112,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 162px;
-    margin-bottom: 72px;
+    margin-bottom: 74px;
   }
 }
 
@@ -184,12 +189,17 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    padding-bottom: 0;
     max-width: 467px;
   }
 }
 
 .cat-programs__item--cat-walk .cat-programs__description {
   width: 342px;
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
 }
 
 .cat-programs__link {
@@ -210,8 +220,8 @@
     content: "";
     width: 32px;
     height: 10px;
-    top: 38px;
-    left: 133px;
+    top: 21px;
+    left: 101px;
     background-image: url("../img/icon-arrow.svg");
   }
 
@@ -234,5 +244,19 @@
     padding-top: 30px;
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: 38px;
+      left: 133px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+
+    &::after {
+      top: 35px;
+      left: 133px;
+    }
   }
 }

@@ -14,6 +14,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 75px;
+
     &::after {
       display: none;
     }
@@ -74,9 +76,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 
@@ -114,6 +116,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 230px;
+    margin-bottom: 26px;
 
     &::before {
       width: 80px;
@@ -137,6 +140,10 @@
       content: "1";
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 35px;
+  }
 }
 
 .explanation__item--powder {
@@ -152,6 +159,10 @@
     &::after {
       content: "2";
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 19px;
   }
 }
 
@@ -169,6 +180,10 @@
       content: "3";
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 13px;
+  }
 }
 
 .explanation__item--difference {
@@ -179,7 +194,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 249px;
+    width: 250px;
 
     &::after {
       content: "4";
