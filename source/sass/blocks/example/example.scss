@@ -264,8 +264,9 @@
 
 .example__slide {
   margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 33px;
   }
 }
 

@@ -51,13 +51,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 22px;
+
     &::after {
       display: none;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 33px;
+    padding-top: 40px;
   }
 }
 
@@ -78,9 +80,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 24px;
+
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
   }
 }
 
@@ -132,6 +140,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 55px;
     padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 67px;
   }
 }
 

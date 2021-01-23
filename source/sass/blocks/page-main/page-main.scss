@@ -56,19 +56,21 @@
   margin: 0;
   text-align: left;
   box-sizing: border-box;
-  padding-bottom: 37px;
+  padding-bottom: 38px;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 83px;
-    padding-top: 65px;
+    padding-bottom: 54px;
+    padding-top: 34px;
+    margin-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
-    padding-top: 74px;
+    margin-left: 0;
+    margin-top: 17px;
+    padding-bottom: 55px;
   }
 }
 

@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     width: 630px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,15 +28,16 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 26px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    margin-bottom: 69px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    margin-bottom: 5px;
   }
 }
 
@@ -51,6 +53,7 @@
 
   @media (min-width: $tablet-width) {
     width: 630px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -145,10 +148,12 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 22px;
   }
 }
 
@@ -171,6 +176,12 @@
   &:not(:last-child) {
     margin-bottom: 14px;
   }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .form__legend {
@@ -178,7 +189,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  margin: 0 0 35px 0;
+  margin: 0 0 30px 0;
   padding: 0;
   position: relative;
   background-color: $white;
@@ -233,9 +244,11 @@
 
 .form__legend--comment {
   width: 142px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     width: 219px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -243,11 +256,21 @@
   }
 }
 
+.form-comment {
+  margin-bottom: 57px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+}
+
 .form__legend--additional {
   width: 164px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     width: 252px;
+    margin-bottom: 62px;
   }
 }
 
@@ -256,7 +279,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     width: 630px;
@@ -266,6 +289,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     width: 1220px;
+    margin-bottom: 69px;
   }
 }
 
@@ -311,7 +335,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-top: 22px;
+  padding-top: 29px;
   position: relative;
   width: 630px;
 
@@ -354,15 +378,16 @@
   display: block;
 
   &:not(:last-child) {
-    padding-bottom: 12px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 88px;
 
     &:not(:last-child) {
-      padding-bottom: 18px;
+      padding-bottom: 23px;
     }
   }
 }
@@ -370,12 +395,19 @@
 .form-parameters__radio + .form-parameters__radio-label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: -1px;
-  width: 23px;
-  height: 23px;
+  left: -44px;
+  top: -5px;
+  width: 26px;
+  height: 26px;
   border: 1px solid $special-grey;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: -7px;
+  }
 }
 
 .form-parameters__radio:hover + .form-parameters__radio-label::before {
@@ -395,12 +427,19 @@
 .form-parameters__radio:checked + .form-parameters__radio-label::after {
   content: "";
   position: absolute;
-  left: -35px;
-  top: 6px;
+  left: -36px;
+  top: 4px;
   width: 11px;
   height: 11px;
   background-color: $basic-green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: -48px;
+    top: 5px;
+  }
 }
 
 .form__textarea {
@@ -444,12 +483,16 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 34px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 18px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
   }
 }
 
@@ -461,13 +504,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 123px;
+    column-gap: 58px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 104px;
+    column-gap: 80px;
   }
 }
 
@@ -488,6 +531,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 14px;
+
+    &:not(:last-child) {
+      margin-bottom: 42px;
+    }
   }
 }
 
@@ -495,10 +543,17 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
-  width: 30px;
-  height: 30px;
+  top: -4px;
+  width: 29px;
+  height: 29px;
   border: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -14px;
+    top: -6px;
+  }
 }
 
 .form-additional__checkbox:hover + .form-additional__label::before {
@@ -522,9 +577,16 @@
   height: 14px;
   background-image: url("../img/icon-checked.svg");
   background-repeat: no-repeat;
-  top: 10px;
+  top: 4px;
   left: 7px;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -14px;
+    top: -6px;
+  }
 }
 
 .form__bottom {
@@ -551,11 +613,11 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  padding: 7px 0;
+  padding: 9px 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
 
   &:hover {
     background-color: $basic-green-2;
@@ -565,6 +627,7 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 0;
+    padding: 10px 0;
   }
 }
 
