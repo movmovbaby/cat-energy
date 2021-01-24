@@ -32,8 +32,8 @@
   </svg>
 
   <header class="page-header">
-    <div class="page-header__wrapper page-header__nav--closed">
-      <a class="page-header__logo" href="index.html">
+    <div class="page-header__wrapper page-header__wrapper--nav-closed">
+      <a class="page-header__logo" href="#">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -46,13 +46,13 @@
       <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list">
           <li class="main-nav__item ">
-            <a href="index.html">Главная</a>
+            <a href="index.html"> Главная </a>
           </li>
           <li class="main-nav__item main-nav__item--active">
             <a>Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html ">Подбор программы</a>
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -60,7 +60,7 @@
   </header>
   <main class="page-main">
     <div class="page-main__wrapper">
-      <h1 class="page-main__title">Каталог продукции</h1>
+      <h1 class="page-main__title page-main__title--catalog">Каталог продукции</h1>
     </div>
     <section class="catalog">
       <div class="catalog__wrapper">
@@ -269,7 +269,7 @@
               </tr>
               <tr class="parameters-list__row">
                 <td class="parameters-list__item">Вкус</td>
-                <td class="parameters-list__value">Курица</td>
+                <td class="parameters-list__value">Гречка</td>
               </tr>
               <tr class="parameters-list__row">
                 <td class="parameters-list__item">Цена</td>
@@ -375,7 +375,7 @@
           <h3 class="visually-hidden">Подарок от Кэт Энерджи</h3>
           <img class="gift__img" src="img/icon-gift.svg" width="78" height="80" alt="Подарок">
           <p class="gift__text">
-            Закажите все и получите чехол для кота в подарок!
+            Закажите все<br>и получите чехол для<br>кота в подарок!
           </p>
         </div>
       </div>
@@ -384,7 +384,7 @@
       <div class="contacts__wrapper">
         <div class="contacts__address-container">
           <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__address">
             <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург
           </p>
@@ -396,19 +396,6 @@
           style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
       </div>
-      <!--  <div class="contacts__img-container">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/location-desktop.webp 1x, img/location-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/location-tablet.webp 1x, img/img/location-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/location.webp 1x, img/location@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/location-desktop.png 1x, img/location-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/location-tablet@2x.png 2x">
-              <img src="img/location.png" srcset="img/location@2x.png 2x" width="320" height="362" alt="Карта" />
-            </picture>
-          </div> -->
     </section>
 
   </main>

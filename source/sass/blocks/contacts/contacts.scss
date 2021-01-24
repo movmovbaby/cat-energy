@@ -6,8 +6,7 @@
   width: 280px;
   margin: 0 auto;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
+
   padding-top: 28px;
   padding-bottom: 26px;
   box-sizing: border-box;
@@ -47,7 +46,7 @@
     box-sizing: border-box;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0;
     padding: 64px 84px 60px 76px;
     background-color: $white;
   }
