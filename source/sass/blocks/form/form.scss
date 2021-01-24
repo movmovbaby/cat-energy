@@ -92,7 +92,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 19px;
+    padding-left: 15px;
     height: 52px;
   }
 
@@ -179,7 +179,7 @@
 
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 21px;
     }
   }
 }
@@ -236,6 +236,7 @@
 
   @media (min-width: $tablet-width) {
     width: 553px;
+    margin-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
