@@ -58,6 +58,7 @@
 
   @media (min-width: $desktop-width) {
     width: 569px;
+    margin-bottom: 42px;
   }
 }
 
@@ -180,6 +181,12 @@
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
       margin-bottom: 21px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
     }
   }
 }
