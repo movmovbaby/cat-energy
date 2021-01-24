@@ -9,24 +9,9 @@
 
   @media (min-width: $desktop-width) {
     background: transparent;
-
-    /* background-origin: border-box;
-    background-position: top right;
-    background-repeat: no-repeat; */
-    /* margin-top: -136px; */
     z-index: -1;
     position: relative;
     padding-bottom: 188px;
-
-    @media (min-resolution: 2dppx) {
-      /* background-image: url("../img/promo-cat-desktop@2x.jpg");
-      background-origin: border-box;
-      background-position: top right;
-      background-size: 720px 694px;
-      background-repeat: no-repeat; */
-      /* margin-top: -136px; */
-      z-index: -1;
-    }
 
     &::after {
       content: "";
@@ -39,6 +24,15 @@
       background-image: url("../img/promo-cat-desktop.jpg");
       background-size: cover;
       background-position: top;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::after {
+        background-image: url("../img/promo-cat-desktop@2x.jpg");
+        background-size: cover;
+        background-position: top;
+        margin-top: -136px;
+      }
     }
   }
 }
