@@ -336,6 +336,30 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom: 1px dotted $black;
+      opacity: 0.24;
+      color: $black;
+      width: 45px;
+      height: 1px;
+    }
+
+    &:hover {
+      &::after {
+        border-bottom: 1px solid $black;
+      }
+    }
+
+    &:focus,
+    &:active {
+      border: none;
+    }
   }
 }
 
@@ -344,11 +368,23 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
+
+    &::after {
+      top: 32px;
+      left: 9px;
+    }
   }
 }
 
 .example__slider-control--right {
   margin-right: 3px;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 32px;
+      left: 13px;
+    }
+  }
 }
 
 .example__slider-range {
@@ -392,9 +428,25 @@
     width: 34px;
     height: 34px;
     padding: 0;
-    border: 13px solid $white;
+    border: 1px solid $special-grey;
     border-radius: 50%;
-    background-color: $basic-green;
+    background-color: $white;
     box-sizing: border-box;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
+      border-radius: 50%;
+    }
+
+    &:focus,
+    &:active {
+      border: 1px solid $basic-green;
+    }
   }
 }
