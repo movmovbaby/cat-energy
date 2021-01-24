@@ -102,12 +102,33 @@
   padding: 0;
 }
 
+.social__link svg {
+  fill: $special-grey-darken;
+}
+
+.social__icon-fb svg {
+  fill: none;
+  stroke: $special-grey-darken;
+}
+
 .social__link:hover svg {
+  fill: $basic-green;
+}
+
+.social__icon-fb:hover svg {
+  fill: none;
   stroke: $basic-green;
 }
 
 .social__link:active svg,
 .social__link:focus svg {
+  fill: $basic-green;
+  opacity: 0.3;
+}
+
+.social__icon-fb:active svg,
+.social__icon-fb:focus svg {
+  fill: none;
   stroke: $basic-green;
   opacity: 0.3;
 }

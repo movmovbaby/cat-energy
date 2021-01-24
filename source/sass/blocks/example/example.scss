@@ -332,58 +332,57 @@
   border: none;
   background-color: inherit;
   cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px dotted $black;
+    opacity: 0.24;
+    color: $black;
+    width: 45px;
+    height: 1px;
+  }
+
+  &:hover {
+    &::after {
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  &:focus,
+  &:active {
+    &::after {
+      border: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-bottom: 1px dotted $black;
-      opacity: 0.24;
-      color: $black;
-      width: 45px;
-      height: 1px;
-    }
-
-    &:hover {
-      &::after {
-        border-bottom: 1px solid $black;
-      }
-    }
-
-    &:focus,
-    &:active {
-      border: none;
-    }
   }
 }
 
 .example__slider-control--left {
   margin-left: 8px;
 
+  &::after {
+    top: 32px;
+    left: 9px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 0;
-
-    &::after {
-      top: 32px;
-      left: 9px;
-    }
   }
 }
 
 .example__slider-control--right {
   margin-right: 3px;
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      top: 32px;
-      left: 13px;
-    }
+  &::after {
+    top: 32px;
+    left: 13px;
   }
 }
 
