@@ -106,7 +106,7 @@
   fill: $special-grey-darken;
 }
 
-.social__icon-fb svg {
+.social__link-fb svg {
   fill: none;
   stroke: $special-grey-darken;
 }
@@ -115,7 +115,7 @@
   fill: $basic-green;
 }
 
-.social__icon-fb:hover svg {
+.social__link-fb:hover svg {
   fill: none;
   stroke: $basic-green;
 }
@@ -126,8 +126,8 @@
   opacity: 0.3;
 }
 
-.social__icon-fb:active svg,
-.social__icon-fb:focus svg {
+.social__link-fb:active svg,
+.social__link-fb:focus svg {
   fill: none;
   stroke: $basic-green;
   opacity: 0.3;

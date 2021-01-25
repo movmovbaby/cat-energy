@@ -132,6 +132,7 @@
   @media (min-width: $desktop-width) {
     &::after {
       background: $white;
+      width: 100%;
     }
   }
 }
