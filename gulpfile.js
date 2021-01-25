@@ -21,11 +21,11 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(gulp.dest("build/css"))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -169,6 +169,7 @@ exports.default = gulp.series(
     scripts,
     sprite,
     copy,
+    /* images, */
     createWebp
   ),
   gulp.series(

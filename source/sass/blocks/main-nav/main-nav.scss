@@ -69,8 +69,8 @@
   text-transform: uppercase;
   padding-top: 22px;
   padding-bottom: 24px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0;
+  padding-right: 0;
   text-align: center;
   color: $black;
 
@@ -112,8 +112,8 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 2px;
-      left: 5px;
+      bottom: 4px;
+      left: 0;
       height: 2px;
       width: 100%;
       background: $basic-green;
@@ -128,7 +128,7 @@
   }
 }
 
-.main-nav__item--green-background .main-nav__item--active {
+.main-nav--green-background .main-nav__item--active {
   @media (min-width: $desktop-width) {
     &::after {
       background: $white;
