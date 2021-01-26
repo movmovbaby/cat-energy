@@ -127,7 +127,7 @@
     background-image: url("../img/icon-email-red.svg");
     background-repeat: no-repeat;
     background-position: center right 15px;
-    border: 2px solid $status_error;
+    box-shadow: 0 0 0 1px $status_error;
   }
 }
 
@@ -147,7 +147,7 @@
     background-image: url("../img/icon-phone-red.svg");
     background-repeat: no-repeat;
     background-position: center right 15px;
-    border: 2px solid $status_error;
+    box-shadow: 0 0 0 1px $status_error;
   }
 }
 
