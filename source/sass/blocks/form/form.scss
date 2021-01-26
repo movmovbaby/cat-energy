@@ -111,18 +111,6 @@
   -moz-appearance: textfield;
 }
 
-/* .form__input[type="number"]::-webkit-input-placeholder {
-  color: $white;
-}
-
-.form__input[type="number"]::-moz-placeholder {
-  color: $white;
-}
-
-.form__input[type="number"]::input-placeholder {
-  color: $white;
-}
- */
 .form__input[type="email"] {
   background-image: url("../img/icon-email.svg");
   background-repeat: no-repeat;
