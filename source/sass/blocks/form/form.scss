@@ -432,6 +432,10 @@
   border-color: $input-grey;
 }
 
+.form-parameters__radio:focus + .form-parameters__radio-label::before {
+  border-color: $basic-green;
+}
+
 .form-parameters__radio:disabled + .form-parameters__radio-label {
   border-color: $input-grey;
   opacity: 0.3;
@@ -576,6 +580,10 @@
 
 .form-additional__checkbox:hover + .form-additional__label::before {
   border-color: $input-grey;
+}
+
+.form-additional__checkbox:focus + .form-additional__label::before {
+  border-color: $special-dark-grey;
 }
 
 .form-additional__checkbox:disabled + .form-additional__label::before {
