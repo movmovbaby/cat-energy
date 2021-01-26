@@ -3,6 +3,8 @@ const pageHeaderWrapper = document.querySelector(".page-header__wrapper");
 const navToggle = pageHeaderWrapper.querySelector(".page-header__nav-toggle");
 const mainNav = pageHeaderWrapper.querySelector(".main-nav ");
 
+pageHeaderWrapper.classList.remove("page-header__wrapper--nav-nojs")
+
 navToggle.addEventListener("click", function () {
   if (pageHeaderWrapper.classList.contains("page-header__wrapper--nav-closed")) {
     pageHeaderWrapper.classList.remove("page-header__wrapper--nav-closed");

@@ -70,6 +70,7 @@
   }
 }
 
+
 .page-header__nav-toggle {
   position: relative;
   top: 12px;
@@ -115,5 +116,20 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $mobile-width-only) {
+  .page-header__wrapper--nav-nojs .page-header__nav-toggle {
+    /* &::before,
+    &::after {
+      display: none;
+    } */
+    display: none;
+  }
+
+  .page-header__wrapper--nav-nojs .main-nav {
+    position: static;
+    min-height: 0;
   }
 }
